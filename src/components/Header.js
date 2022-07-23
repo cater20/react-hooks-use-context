@@ -5,14 +5,14 @@ import defaultUser from "../data";
 import {UserContext} from "../context/user"
 
 
-function Header({ theme, setTheme, user, setUser }) {
-  const user=UserContext(UserContext)
+function Header({ theme, setTheme }) {
+  const {user,setUser}=useContext(UserContext)
 
   function handleLogin() {
     if (user) {
-      //setUser(null);
+      setUser(null);
     } else {
-      //setUser(defaultUser);
+      setUser(defaultUser);
     }
   }
 
