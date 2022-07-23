@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Profile from "./Profile";
+import {userProvider} from "../context/user"
 
 function App() {
   const [theme, setTheme] = useState("dark");
