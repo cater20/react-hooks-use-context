@@ -1,8 +1,8 @@
-import react, { useState } from "react";
+import React, { useState } from "react";
 //import user from "../data";
 
 
-const UserContext= react.createContext();
+const UserContext= React.createContext();
 
 function UserProvider({ children }) {
 const [user, setUser] = useState(null);
